@@ -16,14 +16,11 @@
     --mainBgColor:#131415;
 }
 
-
-
 *{
     font-family: 'Readex Pro';
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
-    
 }
 
 body{
@@ -76,6 +73,11 @@ li{
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#profile-pic:hover {
+    transform: scale(1.1);
 }
 
 #email{
@@ -93,10 +95,10 @@ li{
     font-weight: 300;
     color: var(--secondaryTextColor);
     font-size: 0.9em;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
-#socials--list a:hover{
+#socials--list a:hover {
     font-weight: 100;
     color: var(--mainLinkColor);
     font-size: 0.9em;
@@ -104,6 +106,25 @@ li{
 
 #qualifications--list{
     list-style: none;
+}
+
+#qualifications--list a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    transition: color 0.3s;
+}
+
+#qualifications--list a:hover {
+    color: #ff6600;
+}
+
+#qualifications--list li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+#qualifications--list li:hover {
+    color: #ff6600;
 }
 
 #wrapper--techstack__items{
@@ -118,6 +139,12 @@ li{
     border-radius: 5px;
     padding: 0.5em 1em;
     align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card--techstack:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.05);
 }
 
 .card--project{
@@ -126,15 +153,13 @@ li{
     border-top: 1px solid var(--mainBorderColor);
 }
 
-.card--project a{
+.card--project a {
     color: var(--mainTextColor);
-
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
-.card--project a:hover{
+.card--project a:hover {
     color: rgb(30, 190,214);
-
 }
 
 .card--work-history{
@@ -149,6 +174,14 @@ li{
     height: 1px;
 }
 
+#certificates--list a img {
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+#certificates--list a img:hover {
+    transform: scale(1.1);
+}
 
 @media(max-width:600px){
 
