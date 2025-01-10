@@ -177,6 +177,8 @@ li {
 #certificates--list a img {
     margin: 10px;
     transition: transform 0.3s;
+    width: 160px; /* Reduce from 200px to 160px */
+    height: auto;
 }
 
 #certificates--list a img:hover {
@@ -209,4 +211,37 @@ li {
         border-left: none;
         padding-left: 0;
     }
+
+    .qualifications--cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+    
+    .card--qualification {
+        border: 1px solid var(--mainBorderColor);
+        border-radius: 5px;
+        padding: 1em;
+        width: calc(33% - 2em);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .card--qualification:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card--qualification h3 {
+        margin-top: 0;
+        color: var(--mainTextColor);
+    }
+    
+    .card--qualification p {
+        font-weight: 300;
+        color: var(--secondaryTextColor);
+    }
+    
+
 }

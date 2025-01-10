@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/theme-switcher.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> <!-- Add Devicon CSS -->
     </head>
     <body>
         <div id="container--main">
@@ -39,21 +40,47 @@
             <!-- Qualifications section -->
             <section class="section--page">
                 <h2>Qualifications</h2>
-                <ul id="qualifications--list">
-                    <a href="https://www.credly.com/badges/27d1c560-4064-48fa-9f2a-bddf1a7f32e4/public_url" target="_blank">Introduction to Cybersecurity</a>
-                    <li>High Certificate in Information Technology in Tech Support</li>
-                    <li>Diploma in Software Development</li>
-                </ul>
+                <div class="qualifications--cards">
+                    
+                    <div class="card--qualification">
+                        <h3>High Certificate in Information Technology in Tech Support</h3>
+                        <p>Earned from Rosebank College, this certificate covers fundamental tech support skills.</p>
+                    </div>
+                    <div class="card--qualification">
+                        <h3>Diploma in Software Development</h3>
+                        <p>Earned from Rosebank College, this diploma covers advanced software development techniques.</p>
+                    </div>
+                </div>
             </section>
 
             <!-- Tech stack section -->
             <section class="section--page">
                 <h2>Tech stack</h2>
+                <h3>Frontend</h3>
                 <div id="wrapper--techstack__items">
-                    <div class="card--techstack"><span>Python, JavaScript, NodeJS</span></div>
-                    <div class="card--techstack"><span>C#, JAVA, KOTLIN</span></div>
-                    <div class="card--techstack"><span>REACT, Next JS</span></div>
-                    <div class="card--techstack"><span>FIREBASE, MySQL</span></div>
+                    <div class="card--techstack"><i class="devicon-html5-plain"></i><span> HTML</span></div>
+                    <div class="card--techstack"><i class="devicon-css3-plain"></i><span> CSS</span></div>
+                    <div class="card--techstack"><i class="devicon-bootstrap-plain"></i><span> Bootstrap</span></div>
+                    <div class="card--techstack"><i class="devicon-javascript-plain"></i><span> JavaScript</span></div>
+                    <div class="card--techstack"><i class="devicon-react-original"></i><span> React</span></div>
+                    <div class="card--techstack"><i class="devicon-angularjs-plain"></i><span> Angular</span></div>
+                </div>
+                
+                <h3>Backend</h3>
+                <div id="wrapper--techstack__items">
+                    <div class="card--techstack"><i class="devicon-php-plain"></i><span> PHP</span></div>
+                    <div class="card--techstack"><i class="devicon-java-plain"></i><span> Java</span></div>
+                    <div class="card--techstack"><i class="devicon-csharp-plain"></i><span> C#</span></div>
+                    <div class="card--techstack"><i class="devicon-cplusplus-plain"></i><span> C++</span></div>
+                </div>
+                
+                <h3>Database</h3>
+                <div id="wrapper--techstack__items">
+                    <div class="card--techstack"><i class="devicon-mysql-plain"></i><span> MySQL</span></div>
+                    <div class="card--techstack"><i class="devicon-microsoftsqlserver-plain"></i><span> Microsoft SQL</span></div>
+                    <div class="card--techstack"><i class="devicon-firebase-plain"></i><span> Firebase</span></div>
+                    <div class="card--techstack"><i class="devicon-mongodb-plain"></i><span> MongoDB</span></div>
+                    <div class="card--techstack"><i class="devicon-postgresql-plain"></i><span> PostgreSQL</span></div>
                 </div>
             </section>
 
@@ -70,10 +97,10 @@
                 <h2>Certificates</h2>
                 <div id="certificates--list">
                     <a href="https://www.credly.com/badges/729d1d23-6fcd-4e0c-bf12-871e29f9de33/public_url" target="_blank">
-                        <img src="./assets/images/Ethical Hacker.png" alt="Ethical Hacker Certificate" style="width: 200px; height: auto;">
+                        <img src="./assets/images/Ethical Hacker.png" alt="Ethical Hacker Certificate" style="width: 120px; height: auto;"> <!-- Updated size -->
                     </a>
                     <a href="https://www.credly.com/badges/27d1c560-4064-48fa-9f2a-bddf1a7f32e4/public_url" target="_blank">
-                        <img src="./assets/images/intro to cybersecurity.png" alt="Intro to Cybersecurity Certificate" style="width: 200px; height: auto;">
+                        <img src="./assets/images/intro to cybersecurity.png" alt="Intro to Cybersecurity Certificate" style="width: 120px; height: auto;"> <!-- Updated size -->
                     </a>
                 </div>
             </section>
