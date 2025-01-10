@@ -1,1 +1,1 @@
-A digital resume website built based on the content from my personal REAL resume
+Welcome to my personal portfolio, showcasing my skills
