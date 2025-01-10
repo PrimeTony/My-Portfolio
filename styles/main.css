@@ -92,7 +92,7 @@ li {
 
 /* Profile picture hover effect */
 #profile-pic:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 /* Email styles */
