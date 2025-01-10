@@ -1,5 +1,7 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
+/* Defining color variables for the light theme */
 :root {
     --mainTextColor-light: #000;
     --secondaryTextColor-light: rgb(51 51 51);
@@ -8,6 +10,7 @@
     --mainBgColor-light: rgb(249, 250, 251);
 }
 
+/* Defining color variables for the dark theme */
 [data-theme="dark"] {
     --mainTextColor: #fff;
     --secondaryTextColor: #adb0b1;
@@ -16,6 +19,7 @@
     --mainBgColor: #131415;
 }
 
+/* General styles */
 * {
     font-family: 'Readex Pro';
     line-height: 1.5em;
@@ -23,51 +27,61 @@
     color: var(--mainTextColor);
 }
 
+/* Body styles */
 body {
     background-color: var(--mainBgColor);
 }
 
+/* Paragraph, span, and list item styles */
 p, span, li {
     color: var(--secondaryTextColor);
     font-size: 1em;
 }
 
+/* Link styles */
 a {
     text-decoration: none;
     color: var(--mainLinkColor);
     font-weight: 500;
 }
 
+/* List item styles */
 li {
     line-height: 1.9em;
 }
 
+/* Main container styles */
 #container--main {
     max-width: 700px;
     margin: 0 auto;
     padding: 1em;
 }
 
+/* Section styles */
 .section--page {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
+/* Hero section styles */
 #wrapper--hero {
     display: flex;
     align-items: center;
     gap: 4em;
 }
 
+/* Bio and link styles */
 #bio, a {
     font-weight: 300;
 }
 
+/* User name styles */
 #user-name {
     font-size: 48px;
     line-height: 1em;
 }
 
+/* Profile picture styles */
 #profile-pic {
     width: 150px;
     height: 150px;
@@ -76,14 +90,17 @@ li {
     transition: transform 0.3s;
 }
 
+/* Profile picture hover effect */
 #profile-pic:hover {
     transform: scale(1.1);
 }
 
+/* Email styles */
 #email {
     color: var(--mainTextColor);
 }
 
+/* Socials list styles */
 #socials--list {
     display: flex;
     justify-content: space-between;
@@ -91,6 +108,7 @@ li {
     flex-wrap: wrap;
 }
 
+/* Socials list link styles */
 #socials--list a {
     font-weight: 300;
     color: var(--secondaryTextColor);
@@ -98,35 +116,90 @@ li {
     transition: color 0.3s;
 }
 
+/* Socials list link hover effect */
 #socials--list a:hover {
     font-weight: 100;
     color: var(--mainLinkColor);
     font-size: 0.9em;
 }
 
-#qualifications--list {
-    list-style: none;
+/* Styling for Qualifications section to make it stand out in both themes */
+.qualifications-section {
+    background-color: var(--qualificationsBgColor); /* Use theme-based background color */
+    padding: 2em; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: var(--qualificationsTextColor); /* Use theme-based text color */
 }
 
-#qualifications--list a {
-    text-decoration: none;
-    color: var(--mainLinkColor);
-    transition: color 0.3s;
+.qualifications-section h2 {
+    color: var(--mainTextColor); /* Use main text color for the heading */
+    font-size: 2em; /* Increase the font size for the heading */
+    margin-bottom: 0.5em; /* Space below the heading */
 }
 
-#qualifications--list a:hover {
-    color: #ff6600;
+.card--qualification {
+    margin-bottom: 1em; /* Space between each card */
+    padding: 1em; /* Padding within each card */
+    border: 1px solid var(--mainBorderColor); /* Light border around each card */
+    border-radius: 5px; /* Rounded corners for each card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
 }
 
-#qualifications--list li {
-    list-style-type: none;
-    margin: 5px 0;
+.card--qualification:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
 }
 
-#qualifications--list li:hover {
-    color: #ff6600;
+.collapsible {
+    background-color: var(--collapsibleBgColor); /* Use theme-based background color */
+    color: var(--collapsibleTextColor); /* Use theme-based text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 0.5em 1em; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    text-align: left; /* Left-align text */
+    outline: none; /* Remove outline */
+    font-size: 1em; /* Font size for buttons */
+    margin-bottom: 0.5em; /* Space below buttons */
 }
 
+.collapsible:hover {
+    background-color: var(--collapsibleHoverBgColor); /* Darker background on hover */
+}
+
+.content {
+    padding: 0 1em; /* Padding for collapsible content */
+    display: none; /* Hide content by default */
+    overflow: hidden; /* Prevent overflow */
+    background-color: var(--contentBgColor); /* Light background for content */
+    border: 1px solid var(--mainBorderColor); /* Light border for content */
+    border-radius: 5px; /* Rounded corners for content */
+    margin-bottom: 1em; /* Space below content */
+}
+
+/* Theme-specific variables */
+:root {
+    --qualificationsBgColor: #f3f4f6; /* Light grey background */
+    --qualificationsTextColor: #333; /* Dark grey text */
+    --collapsibleBgColor: #007BFF; /* Blue background for buttons */
+    --collapsibleTextColor: #fff; /* White text for buttons */
+    --collapsibleHoverBgColor: #0056b3; /* Darker blue on hover */
+    --contentBgColor: #f9f9f9; /* Light background for content */
+}
+
+[data-theme="dark"] {
+    --qualificationsBgColor: #1e1e1e; /* Dark grey background for dark theme */
+    --qualificationsTextColor: #ddd; /* Light grey text for dark theme */
+    --collapsibleBgColor: #1e90ff; /* Lighter blue background for buttons in dark theme */
+    --collapsibleTextColor: #fff; /* White text for buttons in dark theme */
+    --collapsibleHoverBgColor: #1c75d8; /* Darker blue on hover for dark theme */
+    --contentBgColor: #2a2a2a; /* Dark background for content in dark theme */
+}
+
+
+
+/* Tech stack items wrapper styles */
 #wrapper--techstack__items {
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +207,7 @@ li {
     font-size: 0.9em;
 }
 
+/* Tech stack card styles */
 .card--techstack {
     border: 1px solid var(--mainBorderColor);
     border-radius: 5px;
@@ -142,26 +216,31 @@ li {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+/* Tech stack card hover effect */
 .card--techstack:hover {
     background-color: #e6f7ff;
     transform: scale(1.05);
 }
 
+/* Project card styles */
 .card--project {
     padding-top: 1em;
     padding-bottom: 1em;
     border-top: 1px solid var(--mainBorderColor);
 }
 
+/* Project card link styles */
 .card--project a {
     color: var(--mainTextColor);
     transition: color 0.3s;
 }
 
+/* Project card link hover effect */
 .card--project a:hover {
     color: rgb(30, 190, 214);
 }
 
+/* Work history card styles */
 .card--work-history {
     border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
@@ -169,11 +248,13 @@ li {
     padding-left: 2em;
 }
 
+/* Line break styles */
 .line-break {
     background-color: var(--mainBorderColor);
     height: 1px;
 }
 
+/* Certificates list styles */
 #certificates--list a img {
     margin: 10px;
     transition: transform 0.3s;
@@ -181,10 +262,12 @@ li {
     height: auto;
 }
 
+/* Certificates list image hover effect */
 #certificates--list a img:hover {
     transform: scale(1.1);
 }
 
+/* Media query for responsive design */
 @media (max-width: 600px) {
     .section--page {
         padding-top: 1em;
@@ -218,7 +301,7 @@ li {
         gap: 1em;
         justify-content: center;
     }
-    
+
     .card--qualification {
         border: 1px solid var(--mainBorderColor);
         border-radius: 5px;
@@ -227,21 +310,19 @@ li {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
     }
-    
+
     .card--qualification:hover {
         transform: scale(1.05);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
-    
+
     .card--qualification h3 {
         margin-top: 0;
         color: var(--mainTextColor);
     }
-    
+
     .card--qualification p {
         font-weight: 300;
         color: var(--secondaryTextColor);
     }
-    
-
 }

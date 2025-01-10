@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/theme-switcher.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> <!-- Add Devicon CSS -->
+        <link rel="stylesheet" href="./styles/collapsible.css"> <!-- Add Collapsible CSS -->
     </head>
     <body>
         <div id="container--main">
@@ -37,21 +38,85 @@
                 </div>
             </section>
 
-            <!-- Qualifications section -->
-            <section class="section--page">
-                <h2>Qualifications</h2>
-                <div class="qualifications--cards">
-                    
-                    <div class="card--qualification">
-                        <h3>High Certificate in Information Technology in Tech Support</h3>
-                        <p>Earned from Rosebank College, this certificate covers fundamental tech support skills.</p>
-                    </div>
-                    <div class="card--qualification">
-                        <h3>Diploma in Software Development</h3>
-                        <p>Earned from Rosebank College, this diploma covers advanced software development techniques.</p>
-                    </div>
-                </div>
-            </section>
+<!-- Qualifications section -->
+<section class="section--page qualifications-section">
+    <h2>Qualifications</h2>
+    <div class="qualifications--cards">
+        <div class="card--qualification">
+            <h3>High Certificate in Information Technology in Tech Support</h3>
+            <p>Earned from Rosebank College, this certificate covers fundamental tech support skills such as:</p>
+            <button class="collapsible">Basic Troubleshooting</button>
+            <div class="content">
+                <ul>
+                    <li>Identifying and resolving common hardware and software issues.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Networking Fundamentals</button>
+            <div class="content">
+                <ul>
+                    <li>Understanding basic networking concepts and protocols.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Operating Systems</button>
+            <div class="content">
+                <ul>
+                    <li>Knowledge of various operating systems, including installation, configuration, and troubleshooting.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Security Awareness</button>
+            <div class="content">
+                <ul>
+                    <li>Basic understanding of cybersecurity principles and practices to protect systems and data.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card--qualification">
+            <h3>Diploma in Information Technology in Software Development</h3>
+            <p>Earned from Rosebank College, this diploma covers advanced software development techniques such as:</p>
+            <button class="collapsible">Database Management</button>
+            <div class="content">
+                <ul>
+                    <li>Designing and implementing databases using SQL and NoSQL technologies.</li>
+                    <li>Optimizing queries and managing database performance.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Web Development</button>
+            <div class="content">
+                <ul>
+                    <li>Building dynamic websites using HTML, CSS, and JavaScript.</li>
+                    <li>Utilizing front-end frameworks like React and Angular.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Mobile App Development</button>
+            <div class="content">
+                <ul>
+                    <li>Creating mobile applications for Android and iOS platforms.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Cybersecurity</button>
+            <div class="content">
+                <ul>
+                    <li>Understanding common vulnerabilities and threats.</li>
+                    <li>Performing risk assessments and vulnerability testing.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Algorithms and Data Structures</button>
+            <div class="content">
+                <ul>
+                    <li>Optimizing code for efficiency and performance.</li>
+                </ul>
+            </div>
+            <button class="collapsible">System Analysis and Design</button>
+            <div class="content">
+                <ul>
+                    <li>Ensuring robust and scalable system design.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
             <!-- Tech stack section -->
             <section class="section--page">
@@ -92,6 +157,7 @@
                 </div>
             </section>
 
+        
             <!-- Certificates section -->
             <section class="section--page">
                 <h2>Certificates</h2>
@@ -105,11 +171,13 @@
                 </div>
             </section>
         </div>
-        <!-- Theme switcher -->
-        <div id="theme-switcher">
-            <div class="theme" id="theme-light" data-theme="light"></div>
-            <div class="theme" id="theme-dark" data-theme="dark"></div>
-        </div>
-    </body>
-    <script src="js/theme-switcher.js"></script>
+            <!-- Theme switcher -->
+    <div id="theme-switcher">
+        <div class="theme" id="theme-light" data-theme="light"></div>
+        <div class="theme" id="theme-dark" data-theme="dark"></div>
+    </div>
+</body>
+<script src="js/theme-switcher.js"></script>
+<script src="js/index.js"></script>
 </html>
+
