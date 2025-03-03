@@ -52,15 +52,16 @@ li {
 
 /* Main container styles */
 #container--main {
-    max-width: 700px;
+    max-width: 1200px; /* Adjusted width for larger screens */
     margin: 0 auto;
-    padding: 1em;
+    padding: 20px;
 }
 
 /* Section styles */
 .section--page {
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-bottom: 40px; /* Added margin for spacing between sections */
 }
 
 /* Hero section styles */
@@ -197,8 +198,6 @@ li {
     --contentBgColor: #2a2a2a; /* Dark background for content in dark theme */
 }
 
-
-
 /* Tech stack items wrapper styles */
 #wrapper--techstack__items {
     display: flex;
@@ -258,7 +257,7 @@ li {
 #certificates--list a img {
     margin: 10px;
     transition: transform 0.3s;
-    width: 160px; /* Reduce from 200px to 160px */
+    width: 160px; /* Adjusted width for certificates */
     height: auto;
 }
 
@@ -267,62 +266,75 @@ li {
     transform: scale(1.1);
 }
 
-/* Media query for responsive design */
-@media (max-width: 600px) {
-    .section--page {
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-top: 3em;
-    }
-
+/* Media Queries */
+@media (max-width: 768px) {
     #wrapper--hero {
-        display: flex;
-        align-items: center;
+        text-align: center;
+        flex-direction: column;
         gap: 1em;
     }
 
     #profile-pic {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
 
-    #wrapper--hero {
+    #user-name {
+        font-size: 1.5em;
+    }
+
+    #bio, #email {
+        font-size: 1em;
+    }
+
+    #socials--list {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .card--work-history {
-        border-left: none;
-        padding-left: 0;
+    .qualifications-section .card--qualification {
+        margin-bottom: 10px;
     }
 
-    .qualifications--cards {
+    .card--techstack {
+        width: 100%;
+    }
+
+    #certificates--list {
         display: flex;
         flex-wrap: wrap;
-        gap: 1em;
         justify-content: center;
     }
 
-    .card--qualification {
-        border: 1px solid var(--mainBorderColor);
-        border-radius: 5px;
-        padding: 1em;
-        width: calc(33% - 2em);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
+    #certificates--list img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #profile-pic {
+        width: 80px;
     }
 
-    .card--qualification:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    #user-name {
+        font-size: 1.2em;
     }
 
-    .card--qualification h3 {
-        margin-top: 0;
-        color: var(--mainTextColor);
+    #bio, #email {
+        font-size: 0.9em;
     }
 
-    .card--qualification p {
-        font-weight: 300;
-        color: var(--secondaryTextColor);
+    #socials--list a {
+        margin-bottom: 10px;
+    }
+
+    .card--techstack {
+        font-size: 0.8em;
+    }
+
+    #certificates--list img {
+        width: 60px;
     }
 }
