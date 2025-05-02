@@ -1,183 +1,98 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tony Mbedzi</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/theme-switcher.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> <!-- Add Devicon CSS -->
-        
-    </head>
-    <body>
-        <div id="container--main">
-            <!-- Hero section with profile picture and bio -->
-            <section id="wrapper--hero" class="section--page">
-                <img id="profile-pic" src="./assets/images/profile_pic.JPG">
-                <div>
-                    <h1 id="user-name">Tony Mbedzi</h1>
-                    <p id="bio">
-                       Diploma in IT in Software Development Graduate at
-                        <a href="https://www.rosebankcollege.co.za/" target="_blank" style="text-decoration: underline; color: #0da2b8;">
-                            Rosebank College
-                        </a>
-                    </p>
-                    <p id="email">👉 hulisaniimbedzi@outlook.com</p>
-                </div>
-            </section>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tony Mbedzi | Resume</title>
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
 
-            <!-- Socials section with links to LinkedIn, GitHub, and resume download -->
-            <section class="section--page">
-                <div id="socials--list">
-                    <a href="https://www.linkedin.com/in/tony-mbedzi-3679651a4/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/PrimeTony" target="_blank">GitHub</a>
-                    
-                    <a href="./assets/Resume/Hulisani Mbedzi Resume 2.pdf" download>Download Resume</a>
-                </div>
-            </section>
+  <main id="container--main">
 
-<!-- Qualifications section -->
-<section class="section--page qualifications-section">
-    <h2>Qualifications</h2>
-    <div class="qualifications--cards">
-        <div class="card--qualification">
-            <h3>High Certificate in Information Technology in Tech Support</h3>
-            <p>Earned from Rosebank College, this certificate covers fundamental tech support skills such as:</p>
-            <button class="collapsible">Basic Troubleshooting</button>
-            <div class="content">
-                <ul>
-                    <li>Identifying and resolving common hardware and software issues.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Networking Fundamentals</button>
-            <div class="content">
-                <ul>
-                    <li>Understanding basic networking concepts and protocols.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Operating Systems</button>
-            <div class="content">
-                <ul>
-                    <li>Knowledge of various operating systems, including installation, configuration, and troubleshooting.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Security Awareness</button>
-            <div class="content">
-                <ul>
-                    <li>Basic understanding of cybersecurity principles and practices to protect systems and data.</li>
-                </ul>
-            </div>
+    <!-- Hero Section -->
+    <section id="wrapper--hero" class="section--page">
+      <div class="hero-content">
+        <img src="assets/images/profile_pic.JPG" id="profile-pic" alt="Profile Picture" />
+        <h1 id="user-name">Tony Mbedzi</h1>
+        <p id="bio">Full Stack Developer passionate about building impactful web applications.</p>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech-stack" class="section--page">
+      <h2>Tech Stack</h2>
+      <div id="wrapper--techstack__items">
+        <div class="card--techstack">HTML</div>
+        <div class="card--techstack">CSS</div>
+        <div class="card--techstack">JavaScript</div>
+        <div class="card--techstack">React</div>
+        <div class="card--techstack">Node.js</div>
+      </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" class="section--page">
+      <h2>Qualifications</h2>
+      <div class="card--qualification">High Certificate in IT in Tech Support</div>
+      <div class="card--qualification">Diploma in IT in Software Development</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section--page">
+      <h2>Projects</h2>
+      <a href="https://primetony.github.io/VersaHelp/" target="_blank">
+        <div class="project-card">
+          <img src="assets/images/VersaHelp.png" alt="Project Image" class="project-image" />
+          <div class="project-info">
+            <h3>VersaHelp</h3>
+            <p>VersaHelp is dedicated to providing top-notch services to meet all the users' needs. Providing access to services such as car wash, transportation, babysitting, or home duties.</p>
+          </div>
         </div>
-        <div class="card--qualification">
-            <h3>Diploma in Information Technology in Software Development</h3>
-            <p>Earned from Rosebank College, this diploma covers advanced software development techniques such as:</p>
-            <button class="collapsible">Database Management</button>
-            <div class="content">
-                <ul>
-                    <li>Designing and implementing databases using SQL and NoSQL technologies.</li>
-                    <li>Optimizing queries and managing database performance.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Web Development</button>
-            <div class="content">
-                <ul>
-                    <li>Building dynamic websites using HTML, CSS, and JavaScript.</li>
-                    <li>Utilizing front-end frameworks like React and Angular.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Mobile App Development</button>
-            <div class="content">
-                <ul>
-                    <li>Creating mobile applications for Android and iOS platforms.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Cybersecurity</button>
-            <div class="content">
-                <ul>
-                    <li>Understanding common vulnerabilities and threats.</li>
-                    <li>Performing risk assessments and vulnerability testing.</li>
-                </ul>
-            </div>
-            <button class="collapsible">Algorithms and Data Structures</button>
-            <div class="content">
-                <ul>
-                    <li>Optimizing code for efficiency and performance.</li>
-                </ul>
-            </div>
-            <button class="collapsible">System Analysis and Design</button>
-            <div class="content">
-                <ul>
-                    <li>Ensuring robust and scalable system design.</li>
-                </ul>
-            </div>
+      </a>
+      
+      <div class="project-card">
+        <img src="assets\images\CAMS.png" alt="Project Image" class="project-image"/>
+        <div class="project-info">
+          <h3>Central Asserts Monitoring System
+          </h3>
+          <p>web-based vehicle tracking system for Assert Oversight, integrating existing tracking hardware to provide real-time GPS tracking and alerts for improved vehicle security and monitoring.</p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- Certificates Section -->
+    <section id="certificates" class="section--page">
+      <h2>Certificates</h2>
+      <div id="certificates--grid">
+        <img src="assets/images/Ethical Hacker.png" alt="Ethical Hacking Certificate" class="certificate-thumbnail" />
+        <img src="assets/images/intro to cybersecurity.png" alt="Cybersecurity Certificate" class="certificate-thumbnail" />
+      </div>
+    </section>
 
+    <!-- Social Links Section -->
+    <section id="social-links" class="section--page">
+      <h2>Social Links</h2>
+      <div class="social-links-container">
+        <a href="https://www.linkedin.com/in/tony-mbedzi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/PrimeTony" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.instagram.com/tonymbedzi/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://twitter.com/TonyMbedzi" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+    </section>
 
-            <!-- Tech stack section -->
-            <section class="section--page">
-                <h2>Tech stack</h2>
-                <h3>Frontend</h3>
-                <div id="wrapper--techstack__items">
-                    <div class="card--techstack"><i class="devicon-html5-plain"></i><span> HTML</span></div>
-                    <div class="card--techstack"><i class="devicon-css3-plain"></i><span> CSS</span></div>
-                    <div class="card--techstack"><i class="devicon-bootstrap-plain"></i><span> Bootstrap</span></div>
-                    <div class="card--techstack"><i class="devicon-javascript-plain"></i><span> JavaScript</span></div>
-                    <div class="card--techstack"><i class="devicon-react-original"></i><span> React</span></div>
-                    <div class="card--techstack"><i class="devicon-angularjs-plain"></i><span> Angular</span></div>
-                </div>
-                
-                <h3>Backend</h3>
-                <div id="wrapper--techstack__items">
-                    <div class="card--techstack"><i class="devicon-php-plain"></i><span> PHP</span></div>
-                    <div class="card--techstack"><i class="devicon-java-plain"></i><span> Java</span></div>
-                    <div class="card--techstack"><i class="devicon-csharp-plain"></i><span> C#</span></div>
-                    <div class="card--techstack"><i class="devicon-cplusplus-plain"></i><span> C++</span></div>
-                </div>
-                
-                <h3>Database</h3>
-                <div id="wrapper--techstack__items">
-                    <div class="card--techstack"><i class="devicon-mysql-plain"></i><span> MySQL</span></div>
-                    <div class="card--techstack"><i class="devicon-microsoftsqlserver-plain"></i><span> Microsoft SQL</span></div>
-                    <div class="card--techstack"><i class="devicon-firebase-plain"></i><span> Firebase</span></div>
-                    <div class="card--techstack"><i class="devicon-mongodb-plain"></i><span> MongoDB</span></div>
-                    <div class="card--techstack"><i class="devicon-postgresql-plain"></i><span> PostgreSQL</span></div>
-                </div>
-            </section>
+    <!-- Contact Section -->
+    <section id="contact-section" class="section--page">
+      <h2>Contact Info</h2>
+      <p><i class="fas fa-phone-alt"></i> +27 72 749 2269</p>
+      <p><i class="fas fa-envelope"></i> hulisaniimbedzi@outlook.com</p>
+      <a href="assets/Resume/Hulisani Mbedzi Resume 2.pdf" download><i class="fas fa-download"></i> Download Resume</a>
+    </section>
 
-            <!-- Projects section -->
-            <section class="section--page">
-                <h2>Projects</h2>
-                <div class="card--project">
-                    <a href="projects.html"><span>🏆 </span>View Projects</a>
-                </div>
-            </section>
+  </main>
 
-        
-            <!-- Certificates section -->
-            <section class="section--page">
-                <h2>Certificates</h2>
-                <div id="certificates--list">
-                    <a href="https://www.credly.com/badges/729d1d23-6fcd-4e0c-bf12-871e29f9de33/public_url" target="_blank">
-                        <img src="./assets/images/Ethical Hacker.png" alt="Ethical Hacker Certificate" style="width: 120px; height: auto;"> <!-- Updated size -->
-                    </a>
-                    <a href="https://www.credly.com/badges/27d1c560-4064-48fa-9f2a-bddf1a7f32e4/public_url" target="_blank">
-                        <img src="./assets/images/intro to cybersecurity.png" alt="Intro to Cybersecurity Certificate" style="width: 120px; height: auto;"> <!-- Updated size -->
-                    </a>
-                </div>
-            </section>
-        </div>
-            <!-- Theme switcher -->
-    <div id="theme-switcher">
-        <div class="theme" id="theme-light" data-theme="light"></div>
-        <div class="theme" id="theme-dark" data-theme="dark"></div>
-    </div>
+  <!-- External JavaScript -->
+  <script src="js\index.js"></script>
 </body>
-<script src="js/theme-switcher.js"></script>
-<script src="js/index.js"></script>
 </html>
-

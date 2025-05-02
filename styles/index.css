@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --mainTextColor-light: #333;
+  --secondaryTextColor-light: rgb(51 51 51);
+  --mainLinkColor-light: #0da2b8;
+  --mainBgColor-light: rgb(249, 250, 251);
+  --cardBgColor-light: #fff;
+  --hoverColor: #007BFF;
+}
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  background-color: var(--mainBgColor-light);
+  margin: 0;
+  padding: 0;
+  color: var(--mainTextColor-light);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section--page {
+  margin-bottom: 50px;
+  padding: 2em 0;
+  text-align: center;
+}
+
+/* Hero Section */
+#wrapper--hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  background: linear-gradient(45deg, #0da2b8, #007BFF);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.hero-content {
+  max-width: 700px;
+  color: white;
+  text-align: center;
+}
+
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Tech Stack */
+#tech-stack {
+  background-color: #f1f1f1;
+}
+
+.card--techstack {
+  display: inline-block;
+  padding: 1.5em;
+  background-color: var(--cardBgColor-light);
+  border-radius: 5px;
+  margin: 1em;
+  font-size: 1.2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card--techstack:hover {
+  background-color: var(--hoverColor);
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Qualifications Section */
+#qualifications .card--qualification {
+  background-color: var(--cardBgColor-light);
+  padding: 1.5em;
+  border-radius: 5px;
+  margin: 1em;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#qualifications .card--qualification:hover {
+  transform: scale(1.05);
+}
+
+/* Projects Section */
+.project-card {
+  display: flex;
+  margin-top: 2em;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-image {
+    width: 200px; /* Adjust the width as necessary */
+    height: 150px; /* Adjust the height as necessary */
+    object-fit: contain; /* Ensures the image fits within the container without zooming */
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #f1f1f1; /* Optional: Gives a background color to the image if it doesn't cover the whole container */
+  }
+  
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 1.5em;
+}
+
+.project-info p {
+  color: var(--secondaryTextColor-light);
+}
+
+/* Certificates Section */
+#certificates--grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2em;
+}
+
+.certificate-thumbnail {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* Social Links Section */
+#social-links .social-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+#social-links a {
+  color: var(--mainLinkColor-light);
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#social-links a:hover {
+  color: var(--hoverColor);
+  transform: translateX(5px);
+}
+
+#social-links i {
+  margin-right: 8px;
+}
+
+/* Contact Section */
+#contact-section {
+  font-size: 1.2em;
+  color: var(--secondaryTextColor-light);
+}
+
+#contact-section a {
+  display: inline-block;
+  background-color: var(--hoverColor);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#contact-section a:hover {
+  background-color: #0056b3;
+}
